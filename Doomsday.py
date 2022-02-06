@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb  6 22:22:23 2022
-
-@author: ryanvossoughi
-"""
-
 import numpy as np
 
 day_of_week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]    #Result strings
