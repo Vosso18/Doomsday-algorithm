@@ -1,10 +1,9 @@
-import numpy as np
+import numpy as np 
 
 day_of_week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]    #Result strings
 day_doom=[3,28,14,4,9,6,11,8,5,10,7,12] #Doomsdays in non leap years from January-December
 day_doom_leap = list(day_doom)
 day_doom_leap[:2]=[4,29] #Doomsdays in leap years from January-December
-
 
 
 #Funtion that guarantees a valid number is entered
