@@ -1,9 +1,18 @@
-import numpy as np 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb  6 22:22:23 2022
+
+@author: ryanvossoughi
+"""
+
+import numpy as np
 
 day_of_week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]    #Result strings
 day_doom=[3,28,14,4,9,6,11,8,5,10,7,12] #Doomsdays in non leap years from January-December
 day_doom_leap = list(day_doom)
 day_doom_leap[:2]=[4,29] #Doomsdays in leap years from January-December
+
 
 
 #Funtion that guarantees a valid number is entered
@@ -45,9 +54,9 @@ while True:
             c=(year%100)%12                     # Determines the remainder
             d=c//4                              # The remainder divided by 4                
             e=a+b+c+d                           # Sum of a,b,c and d gives the doomsday
-            if (year % 400 == 0) and (year % 100 == 0): #Checks for leap year
+            if (year % 400 == 0): #Checks for leap year
                 dooms_day=day_doom_leap
-            elif (year % 4 ==0) and (year % 100 != 0):
+            elif (year % 100 != 0):
                 dooms_day=day_doom
             doom=(day-dooms_day[month-1]+e)%7 #Determines the doomsday from input month and day and turns into a week
             print("")
