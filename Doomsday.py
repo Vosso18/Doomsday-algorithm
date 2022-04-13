@@ -15,7 +15,7 @@ day_doom_leap[:2]=[4,29] #Doomsdays in leap years from January-December
 
 
 
-#Funtion that guarantees a valid number is entered
+#Function that guarantees a valid number is entered
 def inputNumber(prompt): 
     while True:
         try:
@@ -45,7 +45,7 @@ while True:
     if choice == 1: 
         while True:
             item=input("Please enter date like so dd/mm/åååå: ")
-            split_item=list(map(int,item.split("/"))) #Splits inputted date into 3 differennt outputs
+            split_item=list(map(int,item.split("/"))) #Splits input date into 3 differennt outputs
             day=split_item[0]           #Input day is defined
             month=split_item[1]         #Input month is defined
             year=split_item[2]          #Input year is defined
